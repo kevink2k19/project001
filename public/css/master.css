@@ -1,6 +1,7 @@
 body{
   background-color: #000;
   color:#fff;
+  font-family: 'Signika Negative', sans-serif;
 }
 .cus-nav{
   background-color: #000;
@@ -31,4 +32,9 @@ body{
 .tab-container{
   border-top:1px solid #E7C950;
   border-bottom: 1px solid #E7C950;
+}
+
+.zomeOut:hover{
+  transform:scale(1.01);
+  transition: 500ms;
 }
