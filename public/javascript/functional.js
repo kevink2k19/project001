@@ -1,3 +1,4 @@
+// Image
 function imgColor(){
   $(this).removeClass("imgGrayScale");
 }
@@ -15,3 +16,13 @@ function iconBW(){
   $(this).find("img").addClass("imgGrayScale");
   $(this).find("img").removeClass("zomeOut-2");
 }
+
+function registerOn(){
+  $('.regForm').removeClass('no-display');
+  $('.form-area').slideDown('slow');
+}
+function registerOff(){
+  $('.regForm').addClass('no-display');
+  $('.form-area').slideUp('slow');
+}
+// button

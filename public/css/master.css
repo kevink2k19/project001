@@ -14,11 +14,22 @@ a{
   transform:scale(1.1);
   transition: 500ms;
 }
+.carousel-indicators{
+  z-index: 1;
+}
 .cus-nav{
   background-color: #000;
   color:#fff;
   padding:10px 20%;
   border-bottom: 1px solid #E7C950;
+}
+button[type=Register]{
+  background:linear-gradient(to bottom,#E7C950,#FFF,#E7C950);
+  color:#000;
+}
+button[type=Login]{
+  background:linear-gradient(to bottom,#FFF,#CCC,#FFF);
+  color:#000;
 }
 .tab-container{
   background:#000;
@@ -40,10 +51,14 @@ a{
 .nav-link:hover{
   color:#E7C950;
 }
+.nav-link img{
+ margin-top: 5px;
+}
 .icMargin-2{
   margin-left: 6px;
 }
 .textTab{
+  vertical-align: center;
   padding:25px 5%;
 }
 .tab-container{
@@ -114,4 +129,65 @@ footer{
 }
 .leftSide{
   float:right;
+}
+/* Register Form */
+.regForm{
+  width:100%;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  padding:30px 10%;
+  background:#000;
+  padding:0 auto;
+  opacity: 0.7;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.form-area{
+  background:linear-gradient(to bottom,#3A3A3A,#8B8B8B,#3A3A3A);
+  position: absolute;
+  padding:30px 30px;
+  margin: 0 auto;
+  top:25%;
+  left:25%;
+  width:50%;
+  display: none;
+  z-index: 1;
+  position: block;
+  border-radius: 20px;
+}
+.no-display{
+  display:none;
+}
+.btn-register{
+  background:linear-gradient(to bottom,#E7C950,#FFF,#E7C950);
+  color:#000;
+}
+.btn-cancel{
+  background:linear-gradient(to bottom,#C11D1D,#B63636,#C11D1D);
+  color:#fff;
+}
+.form-field{
+  position: relative;
+}
+.form-field>label{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+  touch-action: manipulation;
+  color:#000;
+}
+.form-field input:focus + label{
+  bottom: 100%;
+  margin-top: -20px;
+  color:#fff;
+}
+.form-field input:valid + label{
+  bottom: 100%;
+  margin-top: -20px;
+  color:#fff;
 }
