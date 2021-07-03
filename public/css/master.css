@@ -164,10 +164,6 @@ footer{
   background:linear-gradient(to bottom,#E7C950,#FFF,#E7C950);
   color:#000;
 }
-.btn-cancel{
-  background:linear-gradient(to bottom,#C11D1D,#B63636,#C11D1D);
-  color:#fff;
-}
 .form-field{
   position: relative;
 }
@@ -183,11 +179,23 @@ footer{
 }
 .form-field input:focus + label{
   bottom: 100%;
-  margin-top: -20px;
+  margin-top: -26px;
   color:#fff;
 }
 .form-field input:valid + label{
   bottom: 100%;
   margin-top: -20px;
   color:#fff;
+}
+.btn-cancel{
+  cursor:pointer;
+  color:#B63636;
+  background:#fff;
+  border-radius: 100%;
+  position: absolute;
+  top:0;
+  right:0;
+  margin-top:-10px;
+  margin-right: -10px;
+  opacity: 0.0;
 }
