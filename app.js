@@ -35,6 +35,6 @@ app.get("/language=mm",function(req,res){
     phoneNo:phoneNoInput,pass:pssInput,repass:pssRe,remember:remBer,cancel:cancel,registerTitle:resTt,username:username,agentCode:agentCode,
   })
 })
-app.listen(3000,function(){
+app.listen(process.env.PORT || 80,function(){
   console.log("Sever Started at Port 3000")
 })
